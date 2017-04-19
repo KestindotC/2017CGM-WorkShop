@@ -1,12 +1,20 @@
 # 2017 CGM WorkShop DNA-seq
 
+National Taiwan University Center of Genomic Medicine
+Tuesday May 2, 2017
+Taipei, Taiwan
+
+
+### Key Learning Overview
+
+
 
 ---
 # Getting started
 ### Login using the username assigned to you
 
 ```
-ssh username@ron.sr.unh.edu
+ssh username@172.1x.xx.x
 ```
 ### Setting up a temp directory on Ron
 This setup is specific to Ron and may not be needed for other servers.
@@ -27,7 +35,7 @@ bwa mem -t 1 -R '@RG\tID:group1\tSM:test\tPL:illumina\tLB:lib1\tPU:unit1' /home/
 ```
 
 
-Samtools Preprocessing
+### Samtools Data Preprocessing
 ```
 samtools view -Sb -o exome_chr22.bam exome_chr22.sam
 ```
