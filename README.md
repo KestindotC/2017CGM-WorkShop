@@ -38,6 +38,11 @@ cd DNA/
 ```
 
 
+## DNA-seq
+
+
+## RNA-seq
+
 ### Let see what the data look like
 
 
@@ -86,8 +91,6 @@ samtools view -Sb -o ERR687879_aln.bam ERR687879_aln.sam
 
 
 
-
-
 ### Resources
 
 * [SNPnexus](http://www.snp-nexus.org)
@@ -99,7 +102,9 @@ samtools view -Sb -o ERR687879_aln.bam ERR687879_aln.sam
 * [VarScan](http://varscan.sourceforge.net/)
 * [SNPnexus](http://www.snp-nexus.org/)
 * [Integrative Genomics Viewer (IGV)](http://www.broadinstitute.org/igv/)
+* [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml)
+* [StringTie](https://ccb.jhu.edu/software/stringtie/)
 * [R](https://cran.r-project.org)
 * [R package anamiR](https://cran.r-project.org/web/packages/circlize/index.html)
-
+* [R package ballgown](http://bioconductor.org/packages/release/bioc/html/ballgown.html)
 
