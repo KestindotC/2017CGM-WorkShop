@@ -104,7 +104,10 @@ We use SNPnexus to analyze SNPs in DNA sequence. And the resources are listed in
 ## RNA-seq
 
 ### Let's see the folder structure
+
 ```bash
+vm@ip-172-16-XXXX:~$ ls
+
 ~/RNA-Seq/
 ├── align
 │   ├── ERR188245_chrX.bam
