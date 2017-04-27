@@ -186,22 +186,22 @@ vm@ip-172-16-XXXX:~$ ls
 ```
 
 
-#### Spliced alignment by HISAT2
+#### Spliced alignment using HISAT2
 ```bash
-cd ./align
+cd ~/RNA-Seq/align
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188428_chrX_1.fastq.gz -2 ../raw/ERR188428_chrX_2.fastq.gz -S ERR188428_chrX.sam 2>ERR188428_chrX_summarymetric.txt
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188401_chrX_1.fastq.gz -2 ../raw/ERR188401_chrX_2.fastq.gz -S ERR188401_chrX.sam 2>ERR188401_chrX_summarymetric.txt
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188257_chrX_1.fastq.gz -2 ../raw/ERR188257_chrX_2.fastq.gz -S ERR188257_chrX.sam 2>ERR188257_chrX_summarymetric.txt
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188245_chrX_1.fastq.gz -2 ../raw/ERR188245_chrX_2.fastq.gz -S ERR188245_chrX.sam 2>ERR188245_chrX_summarymetric.txt
 ```
-#### Conversion to sorted BAM file by SAMtools
+#### Conversion to sorted BAM file using SAMtools
 ```bash
 samtools sort -@ 1 -o ERR188428_chrX.bam ERR188428_chrX.sam
 samtools sort -@ 1 -o ERR188401_chrX.bam ERR188401_chrX.sam
 samtools sort -@ 1 -o ERR188257_chrX.bam ERR188257_chrX.sam
 samtools sort -@ 1 -o ERR188245_chrX.bam ERR188245_chrX.sam
 ```
-#### Transcript assembly and quantification by StringTie
+#### Transcript assembly and quantification using StringTie
 
 **Step1: to assemble transcripts for each sample**
 ```bash
@@ -223,7 +223,7 @@ stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188401/ERR188401_chrX.gtf ../alig
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188257/ERR188257_chrX.gtf ../align/ERR188257_chrX.bam
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188245/ERR188245_chrX.gtf ../align/ERR188245_chrX.bam
 ```
-#### Differential Expression Analysis by 
+#### Differential Expression Analysis using ballgown R package
 ```bash
 cd ../
 Rscript DEanalysis.R
