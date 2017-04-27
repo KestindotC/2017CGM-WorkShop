@@ -213,7 +213,7 @@ stringtie -G ../ref/chrX.gtf -o ERR188245_chrX.gtf -l ERR188245_chrX ../align/ER
 ```
 2. to merge transcripts for all samples
 ```bash
-find ./*gtf >mergelist.txt
+find ./*.gtf >mergelist.txt
 stringtie --merge -G ../ref/chrX.gtf -o stringtie_merged.gtf ./mergelist.txt
 ```
 3. to re-estimate the abundance
