@@ -218,7 +218,7 @@ stringtie --merge -G ../ref/chrX.gtf -o stringtie_merged.gtf ./mergelist.txt
 ```
 3. to re-estimate the abundance
 ```bash
-stringtie -e -B -G ./stringtie_merged.gtff -o ../de/ERR188428/ERR188428_chrX.gtf ../align/ERR188428_chrX.bam
+stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188428/ERR188428_chrX.gtf ../align/ERR188428_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188401/ERR188401_chrX.gtf ../align/ERR188401_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188257/ERR188257_chrX.gtf ../align/ERR188257_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188245/ERR188245_chrX.gtf ../align/ERR188245_chrX.bam
