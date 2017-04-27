@@ -188,7 +188,7 @@ vm@ip-172-16-XXXX:~$ ls
 
 #### Spliced alignment by HISAT2
 ```bash
-cd ../align
+cd ./align
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188428_chrX_1.fastq.gz -2 ../raw/ERR188428_chrX_2.fastq.gz -S ERR188428_chrX.sam 2>ERR188428_chrX_summarymetric.txt
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188401_chrX_1.fastq.gz -2 ../raw/ERR188401_chrX_2.fastq.gz -S ERR188401_chrX.sam 2>ERR188401_chrX_summarymetric.txt
 hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188257_chrX_1.fastq.gz -2 ../raw/ERR188257_chrX_2.fastq.gz -S ERR188257_chrX.sam 2>ERR188257_chrX_summarymetric.txt
@@ -215,13 +215,14 @@ stringtie -G ../ref/chrX.gtf -o ERR188245_chrX.gtf -l ERR188245_chrX ../align/ER
 ```bash
 find ./*gtf >mergelist.txt
 stringtie --merge -G ../ref/chrX.gtf -o stringtie_merged.gtf ./mergelist.txt
-#Step3: to re-estimate the abundance
+```
+**Step3: to re-estimate the abundance**
+```bash
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188428/ERR188428_chrX.gtf ../align/ERR188428_chrX.bam
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188401/ERR188401_chrX.gtf ../align/ERR188401_chrX.bam
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188257/ERR188257_chrX.gtf ../align/ERR188257_chrX.bam
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188245/ERR188245_chrX.gtf ../align/ERR188245_chrX.bam
 ```
-
 #### Differential Expression Analysis by 
 ```bash
 cd ../
