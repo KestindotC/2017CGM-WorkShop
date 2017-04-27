@@ -203,7 +203,7 @@ samtools sort -@ 1 -o ERR188245_chrX.bam ERR188245_chrX.sam
 ```
 #### Transcript assembly and quantification using StringTie
 
-1. to assemble transcripts for each sample
+1. **to assemble transcripts for each sample**
 ```bash
 cd ../quan 
 stringtie -G ../ref/chrX.gtf -o ERR188428_chrX.gtf -l ERR188428_chrX ../align/ERR188428_chrX.bam
@@ -211,12 +211,12 @@ stringtie -G ../ref/chrX.gtf -o ERR188401_chrX.gtf -l ERR188401_chrX ../align/ER
 stringtie -G ../ref/chrX.gtf -o ERR188257_chrX.gtf -l ERR188257_chrX ../align/ERR188428_chrX.bam
 stringtie -G ../ref/chrX.gtf -o ERR188245_chrX.gtf -l ERR188245_chrX ../align/ERR188245_chrX.bam
 ```
-2. to merge transcripts for all samples
+2. **to merge transcripts for all samples**
 ```bash
 find ./*gtf >mergelist.txt
 stringtie --merge -G ../ref/chrX.gtf -o stringtie_merged.gtf ./mergelist.txt
 ```
-3. to re-estimate the abundance
+3. **to re-estimate the abundance**
 ```bash
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188428/ERR188428_chrX.gtf ../align/ERR188428_chrX.bam
 stringtie -e -B -G ../ref/chrX.gtf -o ../de/ERR188401/ERR188401_chrX.gtf ../align/ERR188401_chrX.bam
