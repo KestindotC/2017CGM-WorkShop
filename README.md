@@ -185,7 +185,7 @@ vm@ip-172-16-XXXX:~$ ls
     └── chrX_tran.8.ht2
 ```
 
-
+### Analytic Pipeline
 #### Spliced alignment using HISAT2
 ```bash
 cd ~/RNA-Seq/align
