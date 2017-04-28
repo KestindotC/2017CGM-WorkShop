@@ -94,7 +94,7 @@ samtools index ERR687879_aln_sort.bam
 ```
 #### Vairant Detection
 ```bash
-samtools mpileup -B -f ~/DNA-seq/ref/chr17.fa \
+samtools mpileup -B -f ref/chr17.fa \
 ERR687879_aln_sort_rm.bam | \
 varscan mpileup2snp \
 --min-coverage 10 \
