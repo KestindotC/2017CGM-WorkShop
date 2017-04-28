@@ -9,14 +9,14 @@ Taipei, Taiwan
 
 **Tuesday May 2th:**
 - NGS Introduction [Script]
-- DNA sequencing analysis [Script](# DNA-seq)
-- RNA sequencing analysis [Script](# RNA-seq)
+- DNA sequencing analysis [Script](# dna-seq)
+- RNA sequencing analysis [Script](# ena-seq)
 - CellExpress [Script]
 
 **Wednesday May 3th:**
-- R for statistical genomic analysis [Script](# R)
+- R for statistical genomic analysis [Script](# r)
 - Metagenomics
-- anamiR [Script](# anamiR)
+- anamiR [Script](# anamir)
 
 > All tool links, websites, citations were list in [Resources](# Resources).  
 
