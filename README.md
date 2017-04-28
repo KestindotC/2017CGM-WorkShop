@@ -8,17 +8,17 @@ Taipei, Taiwan
 ## Workshop Schedule (permanent links to talks & handouts)
 
 **Tuesday May 2th:**
-- NGS Introduction [Script]
-- DNA sequencing analysis [Script](# dna-seq)
-- RNA sequencing analysis [Script](# ena-seq)
-- CellExpress [Script]
+- NGS Introduction [[Script]]
+- DNA sequencing analysis [[Script]](#dna-seq)
+- RNA sequencing analysis [[Script]](#rna-seq)
+- CellExpress
 
 **Wednesday May 3th:**
-- R for statistical genomic analysis [Script](# r)
+- R for statistical genomic analysis [[Script]](# r)
 - Metagenomics
-- anamiR [Script](# anamir)
+- anamiR [[Script]](#anamir)
 
-> All tool links, websites, citations were list in [Resources](# Resources).  
+> All tool links, websites, citations were list in [[Resources]](#resources).  
 
 ## Getting started
 
@@ -231,6 +231,10 @@ cd ../
 Rscript DEanalysis.R
 ```
 
+
+
+
+
 ## anamiR
 ```R
 install.package('anamiR')
@@ -240,6 +244,7 @@ install.package('anamiR')
 ## Resources
 
 * [Illumina iGenomes](http://support.illumina.com/sequencing/sequencing_software/igenome.ilmn)
+* [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 * [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [MultiQC](http://multiqc.info)
 * [BWA](http://bio-bwa.sourceforge.net/)
