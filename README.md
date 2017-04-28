@@ -228,20 +228,27 @@ stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188245/ERR188245_chrX.gtf 
 cd ../
 Rscript DEanalysis.R
 ```
+
+## anamiR
+```R
+install.package('anamiR')
+
+```
+
 ## Resources
 
-* [SNPnexus](http://www.snp-nexus.org)
 * [Illumina iGenomes](http://support.illumina.com/sequencing/sequencing_software/igenome.ilmn)
 * [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [MultiQC](http://multiqc.info)
 * [BWA](http://bio-bwa.sourceforge.net/)
 * [SAMtools](http://samtools.sourceforge.net/)
 * [VarScan](http://varscan.sourceforge.net/)
-* [SNPnexus](http://www.snp-nexus.org/)
+* [wANNOVAR](http://wannovar.wglab.org)
 * [Integrative Genomics Viewer (IGV)](http://www.broadinstitute.org/igv/)
 * [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml)
 * [StringTie](https://ccb.jhu.edu/software/stringtie/)
 * [R](https://cran.r-project.org)
-* [R package anamiR](https://cran.r-project.org/web/packages/circlize/index.html)
+* [R package anamiR](https://bioconductor.org/packages/release/bioc/html/anamiR.html)
 * [R package ballgown](http://bioconductor.org/packages/release/bioc/html/ballgown.html)
+* [R package SNPassoc]()
 
