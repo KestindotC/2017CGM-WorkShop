@@ -8,23 +8,23 @@ Taipei, Taiwan
 ## Workshop Schedule (permanent links to talks & handouts)
 
 **Tuesday May 2th:**
-- NGS Introduction [[Script]]
+- NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq)
 - RNA sequencing analysis [[Script]](#rna-seq)
 - CellExpress
 
 **Wednesday May 3th:**
-- R for statistical genomic analysis [[Script]](# r)
+- R for statistical genomic analysis [[Script]](#)
 - Metagenomics
 - anamiR [[Script]](#anamir)
 
-> All tool links, websites, citations were list in [[Resources]](#resources).  
+> All tool links, websites, citations were list in [Resources](#resources).  
 
 ## Getting started
 
 ### Login using the username assigned to you
 ```
-ssh username@172.1x.xx.x
+ssh username@140.112.129.20
 ```
 
 ### Environment and home directory
@@ -34,9 +34,15 @@ This setup is help to let you know the basic linux
 - **Change directory to DNA-seq `cd DNA-seq/` and `ls` to list the contents in the folder**
 
 ```
-cd ~/
-pwd
-cd DNA/
+[user1@localhost ~]$ ls
+DNA-Seq  miniconda3  RNA-Seq
+
+[user1@localhost ~]$ pwd
+/training_home/user1
+
+[user1@localhost ~]$ cd DNA-seq/
+[user1@localhost ~]$ ls
+ERR687879_1.fastq  ERR687879_2.fastq  raw  README  ref  results
 ```
 
 
@@ -46,28 +52,29 @@ cd DNA/
 
 ```bash
 
-vm@ip-172-16-XXXX:~$ ls
-
 ~/DNA-seq/
-├── ERR687879_aln.bam
-├── ERR687879_aln.sam
-├── ERR687879_aln_sort.bam
-├── ERR687879_aln_sort_rm.bam
-├── ERR687879_aln_sort_rm.bam.bai
-├── VarScan_ERR687879_chr17.log
-├── VarScan_ERR687879_chr17.vcf
-├── raw/
-│	├── ERR_.fastq1
-│	└── ERR_.fastq2
-└── ref/
-	├── chr17.fa
-	├── chr17.fa.amb
-	├── chr17.fa.ann
-	├── chr17.fa.bwt
-	├── chr17.fa.fai
-	├── chr17.fa.pac
-	└── chr17.fa.sa
-
+├── ERR687879_1.fastq
+├── ERR687879_2.fastq
+├── raw
+│   ├── ERR687879_1.fastq
+│   └── ERR687879_2.fastq
+├── README
+├── ref
+│   ├── chr17.fa
+│   ├── chr17.fa.amb
+│   ├── chr17.fa.ann
+│   ├── chr17.fa.bwt
+│   ├── chr17.fa.fai
+│   ├── chr17.fa.pac
+│   └── chr17.fa.sa
+└── result
+    ├── ERR687879_aln.bam
+    ├── ERR687879_aln.sam
+    ├── ERR687879_aln_sort.bam
+    ├── ERR687879_aln_sort_rm.bam
+    ├── ERR687879_aln_sort_rm.bam.bai
+    ├── VarScan_ERR687879_chr17.log
+    └── VarScan_ERR687879_chr17.vcf
 
 ```
 
@@ -99,8 +106,9 @@ varscan mpileup2snp \
 2> VarScan_ERR687879_chr17.log
 
 ```
-### Variant Annotation
-We use **wANNOVAR** to analyze SNPs in DNA sequence. And the resources link are listed below.
+#### Variant Annotation
+We can use [wANNOVAR](http://wannovar.wglab.org) to annotate SNPs calling result (vcf files).
+So please download the vcf files from the FTP or use demo_vcf [here](query.output.genome_summary.csv) to run the wANNOVAR.
 
 
 ## RNA-seq
@@ -108,7 +116,6 @@ We use **wANNOVAR** to analyze SNPs in DNA sequence. And the resources link are 
 ### Let's see the folder structure
 
 ```bash
-vm@ip-172-16-XXXX:~$ ls
 
 ~/RNA-Seq/
 ├── align
@@ -323,7 +330,6 @@ result_path1 <- result[[1]]
 ## Resources
 
 * [Illumina iGenomes](http://support.illumina.com/sequencing/sequencing_software/igenome.ilmn)
-* [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 * [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [MultiQC](http://multiqc.info)
 * [BWA](http://bio-bwa.sourceforge.net/)
@@ -333,8 +339,9 @@ result_path1 <- result[[1]]
 * [Integrative Genomics Viewer (IGV)](http://www.broadinstitute.org/igv/)
 * [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml)
 * [StringTie](https://ccb.jhu.edu/software/stringtie/)
+* [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 * [R](https://cran.r-project.org)
 * [R package anamiR](https://bioconductor.org/packages/release/bioc/html/anamiR.html)
 * [R package ballgown](http://bioconductor.org/packages/release/bioc/html/ballgown.html)
-* [R package SNPassoc]()
+* [R package SNPassoc](https://cran.r-project.org/web/packages/SNPassoc/index.html)
 
