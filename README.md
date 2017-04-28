@@ -1,35 +1,37 @@
 # 2017 CGM High-throughput genomic analysis WorkShop
 
 National Taiwan University Center of Genomic Medicine   
-Tuesday May 2, 2017   
+Tuesday May 2,3 2017   
 Taipei, Taiwan   
+
 
 ## Workshop Schedule (permanent links to talks & handouts)
 
 **Tuesday May 2th:**
-- NGS Introduction
-- DNA sequencing analysis
-- RNA sequencing analysis
+- NGS Introduction [Script]
+- DNA sequencing analysis [Script](# DNA-seq)
+- RNA sequencing analysis [Script](# RNA-seq)
+- CellExpress [Script]
 
 **Wednesday May 3th:**
-- R for statistical genomic analysis
+- R for statistical genomic analysis [Script](# R)
 - Metagenomics
-- anamiR
+- anamiR [Script](# anamiR)
 
+> All tool links, websites, citations were list in [Resources](# Resources).  
 
 ## Getting started
 
 ### Login using the username assigned to you
-
 ```
 ssh username@172.1x.xx.x
 ```
 
 ### Environment and home directory
 This setup is help to let you know the basic linux
-- **You should be in your home directory**
+- **You should be in your home directory after login**
 - **Type `pwd` and get the path**
-- **Change directory to demo_DNA `cd DNA/` and `ls` to see the contents**
+- **Change directory to DNA-seq `cd DNA-seq/` and `ls` to list the contents in the folder**
 
 ```
 cd ~/
@@ -73,7 +75,7 @@ vm@ip-172-16-XXXX:~$ ls
 #### To use bwa-mem aligner, run the commands below
 
 ```bash
-bwa mem -t 4 chr17.fa ERR687879_1.fastq ERR687879_2.fastq > ERR687879_aln.sam
+bwa mem ref/chr17.fa ERR687879_1.fastq ERR687879_2.fastq > ERR687879_aln.sam
 ```
 
 #### Samtools Data Preprocessing
@@ -98,7 +100,7 @@ varscan mpileup2snp \
 
 ```
 ### Variant Annotation
-We use SNPnexus to analyze SNPs in DNA sequence. And the resources are listed in the following seg
+We use **wANNOVAR** to analyze SNPs in DNA sequence. And the resources link are listed below.
 
 
 ## RNA-seq
