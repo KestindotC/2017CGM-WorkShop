@@ -9,7 +9,7 @@ Taipei, Taiwan
 
 **Tuesday May 2th:**
 - NGS Introduction 
-- DNA sequencing analysis [[Script]](#dna-seq)
+- DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
 - RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/3attgewufrx1mfl/NTU_RNA-seq_workshop_2017.pdf?dl=0)
 - CellExpress
 
@@ -67,7 +67,7 @@ ERR687879_1.fastq  ERR687879_2.fastq  raw  README  ref  results
 │   ├── chr17.fa.fai
 │   ├── chr17.fa.pac
 │   └── chr17.fa.sa
-└── result
+└── results
     ├── ERR687879_aln.bam
     ├── ERR687879_aln.sam
     ├── ERR687879_aln_sort.bam
@@ -97,8 +97,8 @@ samtools index ERR687879_aln_sort.bam
 samtools mpileup -B -f ref/chr17.fa \
 ERR687879_aln_sort_rm.bam | \
 varscan mpileup2snp \
---min-coverage 10 \
---min-var-freq 0.1 \
+--min-coverage 40 \
+--min-var-freq 0.4 \
 --min-reads2 16 \
 --min-avg-qual 30 \
 --output-vcf \
@@ -430,4 +430,4 @@ result_path1 <- result[[1]]
 * [R package anamiR](https://bioconductor.org/packages/release/bioc/html/anamiR.html)
 * [R package ballgown](http://bioconductor.org/packages/release/bioc/html/ballgown.html)
 * [R package SNPassoc](https://cran.r-project.org/web/packages/SNPassoc/index.html)
-
+* [The Applications of Big Data Analysis in Genomic Research 2016](http://www.airitilibrary.com/Publication/alDetailedMesh?docid=10281916-201611-201612070002-201612070002-609-619)
