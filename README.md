@@ -11,7 +11,7 @@ Taipei, Taiwan
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
 - RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/3attgewufrx1mfl/NTU_RNA-seq_workshop_2017.pdf?dl=0)
-- [CellExpress]((http://cellexpress.cgm.ntu.edu.tw))
+- [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
 - R for statistical genomic analysis [[Script]](#r-for-statistical-genomic-analysis)
