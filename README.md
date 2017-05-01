@@ -10,7 +10,7 @@ Taipei, Taiwan
 **Tuesday May 2th:**
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
-- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/3attgewufrx1mfl/NTU_RNA-seq_workshop_2017.pdf?dl=0)
+- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/psh5tv452le8lmg/NTU_RNA-seq_workshop_2017.pdf?dl=0)
 - [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
@@ -425,6 +425,7 @@ result_path1 <- result[[1]]
 * [Integrative Genomics Viewer (IGV)](http://www.broadinstitute.org/igv/)
 * [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml)
 * [StringTie](https://ccb.jhu.edu/software/stringtie/)
+* [RNA-seq Data for Exercise](http://www.ebi.ac.uk/arrayexpress/experiments/E-GEUV-1/)
 * [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 * [R](https://cran.r-project.org)
 * [R package anamiR](https://bioconductor.org/packages/release/bioc/html/anamiR.html)
