@@ -11,7 +11,7 @@ Taipei, Taiwan
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
 - RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/3attgewufrx1mfl/NTU_RNA-seq_workshop_2017.pdf?dl=0)
-- CellExpress
+- [CellExpress]((http://cellexpress.cgm.ntu.edu.tw))
 
 **Wednesday May 3th:**
 - R for statistical genomic analysis [[Script]](#r-for-statistical-genomic-analysis)
@@ -28,9 +28,9 @@ ssh username@140.112.129.20
 ```
 
 ### Environment and home directory
-This setup is help to let you know the basic linux
+Basic linux command
 - **You should be in your home directory after login**
-- **Type `pwd` and get the path**
+- **Type `pwd` and get the current path**
 - **Change directory to DNA-seq `cd DNA-seq/` and `ls` to list the contents in the folder**
 
 ```
