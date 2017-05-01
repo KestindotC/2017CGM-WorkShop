@@ -307,6 +307,13 @@ pheno.data <- pheno.data[, -1]
 pheno.data <- as.matrix(pheno.data)
 row.names(pheno.data) <- pheno_name
 ```
+#### Extra steps
+```R
+mirna <- mirna[, 50:70]
+mrna <- mrna[, 50:70]
+pheno.data <- as.matrix[50:70, ]
+colnames(pheno.data) <- "ER"
+```
 3. SummarizedExperiment object
 ```R
 mirna_21 <- miR_converter(mirna, original_version = 17)
