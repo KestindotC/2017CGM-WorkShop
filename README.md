@@ -238,13 +238,92 @@ cd ../
 Rscript DEanalysis.R
 ```
 
+---
 
 
+## R for statistical genomic analysis
 
+### General Workflow
+1. Import data
+```R
+library(SNPassoc)
+data(SNPs)
+SNPs[1:10,1:10]
+ncol(SNPs)
+nrow(SNPs)
+```
+2. **Single** SNP analysis 
+```R
+mySNP <- snp(SNPs$snp10001,sep="")
+SNPs$snp10001
+mySNP
+summary(mySNP)
+plot(mySNP,label="snp10001",col="darkgreen")
+```
+3. Analysis for **many** SNPs
+```R
+myData <- setupSNP(data=SNPs,colSNPs=6:40,sep="")
+myData[1:5,6:10]
+plot(myData, which=20)
+summary(myData)
+```
+4. Hardy-Weinberg Equilibrium (HWE)
+```R
+res <- tableHWE(myData)
+res
+```
+5. Remove SNPs violating HWE and MAF<0.05
+```R
+sum <- summary(myData)
+delete_index <- subset(c(1:nrow(sum)),sum[,2]>95|sum[,3]<0.05)
+Data <- myData[,-(delete_index+5)]
+summary(Data)
+```
+6. Single SNP association
+```R
+association(casco~snp10001, data=Data)
+association(casco~snp10001, model=c("log-additive"), data=Data)
+```
+7. Adjusted association analysis
+```R
+association(casco~sex+snp10001,model=c("log-additive"), data=Data)
+```
+8. Stratified analysis
+```R
+association(casco~snp10001+strata(sex), model=c("log-additive"), data=Data)
+```
+
+9. Interaction analysis
+```R
+association(casco~snp10001*sex, model=c("log-additive"), data=Data)
+```
+10. GWAS
+```R
+result <- WGassociation(casco,data=Data)
+result
+plot(result)
+summary(result)
+result <- WGassociation(casco, data=Data, model="log-add")
+result <- WGassociation(casco~sex, data=Data, model="log-add")
+```
+
+11. Bonferroni correction
+```R
+ans <- WGassociation(casco,data=Data, model="all")
+Bonferroni.sig(ans, model="dominant", alpha=0.05, include.all.SNPs=FALSE)
+```
+12. GWAS
+```R
+data(HapMap)
+summary(resHapMap)
+plot(resHapMap)
+plot(resHapMap, whole=FALSE)
+```
+---   
 
 ## anamiR
 ### General Workflow
-1. Load data
+1. Import data
 ```R
 library(anamiR)
 data(mrna)
