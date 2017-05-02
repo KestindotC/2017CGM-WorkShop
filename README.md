@@ -242,7 +242,7 @@ stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188401/ERR188401_chrX.gtf 
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188257/ERR188257_chrX.gtf ../align/ERR188257_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188245/ERR188245_chrX.gtf ../align/ERR188245_chrX.bam
 ```
-4. view vcf file 
+4. view gtf file 
 ```bash
 head –n 5 ERR188245_chrX.gtf 
 ```
