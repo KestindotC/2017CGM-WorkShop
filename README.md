@@ -10,7 +10,7 @@ Taipei, Taiwan
 **Tuesday May 2th:**
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
-- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/ver9zxk44pk76nu/RNA-seq_workshop_2017_v3.pdf?dl=0)
+- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/wizoh9qokl7xoyi/RNA-seq_workshop_2017_v3.pdf?dl=0)
 - [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
@@ -230,6 +230,10 @@ stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188428/ERR188428_chrX.gtf 
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188401/ERR188401_chrX.gtf ../align/ERR188401_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188257/ERR188257_chrX.gtf ../align/ERR188257_chrX.bam
 stringtie -e -B -G ./stringtie_merged.gtf -o ../de/ERR188245/ERR188245_chrX.gtf ../align/ERR188245_chrX.bam
+```
+4. view vcf file 
+```bash
+head –n 5 ERR188245_chrX.gtf 
 ```
 #### Differential Expression Analysis using ballgown R package
 ```bash
