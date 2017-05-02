@@ -10,7 +10,7 @@ Taipei, Taiwan
 **Tuesday May 2th:**
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
-- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/wizoh9qokl7xoyi/RNA-seq_workshop_2017_v3.pdf?dl=0)
+- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/p36ig5ojxtbzjv6/RNA-seq_workshop_2017_v4.pdf?dl=0)
 - [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
