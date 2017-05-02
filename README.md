@@ -194,7 +194,7 @@ So please download the vcf files from the FTP or use demo_vcf [here](query.outpu
 ```
 
 ### Analytic Pipeline
-#### link to http://140.112.129.20:9999
+#### link to http://140.112.129.20
 ```bash
 [training@localhost ~]$ pwd
 /training_home/training
