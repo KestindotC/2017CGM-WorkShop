@@ -197,17 +197,17 @@ So please download the vcf files from the FTP or use demo_vcf [here](query.outpu
 #### Spliced alignment using HISAT2
 ```bash
 cd ~/RNA-Seq/align
-hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188428_chrX_1.fastq.gz -2 ../raw/ERR188428_chrX_2.fastq.gz -S ERR188428_chrX.sam 2>ERR188428_chrX_summarymetric.txt
-hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188401_chrX_1.fastq.gz -2 ../raw/ERR188401_chrX_2.fastq.gz -S ERR188401_chrX.sam 2>ERR188401_chrX_summarymetric.txt
-hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188257_chrX_1.fastq.gz -2 ../raw/ERR188257_chrX_2.fastq.gz -S ERR188257_chrX.sam 2>ERR188257_chrX_summarymetric.txt
-hisat2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188245_chrX_1.fastq.gz -2 ../raw/ERR188245_chrX_2.fastq.gz -S ERR188245_chrX.sam 2>ERR188245_chrX_summarymetric.txt
+hisat2 -p 2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188428_chrX_1.fastq.gz -2 ../raw/ERR188428_chrX_2.fastq.gz -S ERR188428_chrX.sam 2>ERR188428_chrX_summarymetric.txt
+hisat2 -p 2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188401_chrX_1.fastq.gz -2 ../raw/ERR188401_chrX_2.fastq.gz -S ERR188401_chrX.sam 2>ERR188401_chrX_summarymetric.txt
+hisat2 -p 2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188257_chrX_1.fastq.gz -2 ../raw/ERR188257_chrX_2.fastq.gz -S ERR188257_chrX.sam 2>ERR188257_chrX_summarymetric.txt
+hisat2 -p 2 --dta -x ../ref/chrX_tran -1 ../raw/ERR188245_chrX_1.fastq.gz -2 ../raw/ERR188245_chrX_2.fastq.gz -S ERR188245_chrX.sam 2>ERR188245_chrX_summarymetric.txt
 ```
 #### Conversion to sorted BAM files using SAMtools
 ```bash
-samtools sort -@ 1 -o ERR188428_chrX.bam ERR188428_chrX.sam
-samtools sort -@ 1 -o ERR188401_chrX.bam ERR188401_chrX.sam
-samtools sort -@ 1 -o ERR188257_chrX.bam ERR188257_chrX.sam
-samtools sort -@ 1 -o ERR188245_chrX.bam ERR188245_chrX.sam
+samtools sort -@ 2 -o ERR188428_chrX.bam ERR188428_chrX.sam
+samtools sort -@ 2 -o ERR188401_chrX.bam ERR188401_chrX.sam
+samtools sort -@ 2 -o ERR188257_chrX.bam ERR188257_chrX.sam
+samtools sort -@ 2 -o ERR188245_chrX.bam ERR188245_chrX.sam
 ```
 #### Transcript assembly and quantification using StringTie
 
