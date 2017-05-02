@@ -194,6 +194,17 @@ So please download the vcf files from the FTP or use demo_vcf [here](query.outpu
 ```
 
 ### Analytic Pipeline
+#### link to http://140.112.129.20:9999
+```bash
+[training@localhost ~]$ pwd
+/training_home/training
+[training@localhost ~]$ cd ../user#
+[training@localhost ~]$ ls
+RNA-Seq
+[training@localhost ~]$ cd RNA-Seq
+[training@localhost ~]$ ls
+align chrX_phenodata.csv de DEanalysis.R quan raw ref
+```
 #### Spliced alignment using HISAT2
 ```bash
 cd ~/RNA-Seq/align
