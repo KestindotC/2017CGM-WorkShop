@@ -10,7 +10,7 @@ Taipei, Taiwan
 **Tuesday May 2th:**
 - NGS Introduction 
 - DNA sequencing analysis [[Script]](#dna-seq) [[Slides]](http://slides.com/kestinchang/dnaseq-2/fullscreen)
-- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/psh5tv452le8lmg/NTU_RNA-seq_workshop_2017.pdf?dl=0)
+- RNA sequencing analysis [[Script]](#rna-seq) [[Slides]](https://www.dropbox.com/s/0epxbafpcaqtx4d/NTU_RNA-seq_workshop_2017.pdf?dl=0)
 - [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
@@ -134,7 +134,7 @@ So please download the vcf files from the FTP or use demo_vcf [here](query.outpu
 ├── chrX_phenodata.csv
 ├── de
 │   ├── boxplot.jpg
-│   ├── chrX_gene_results.csv
+│   ├── FPKM_summary_table.csv 
 │   ├── chrX_transcript_results.csv
 │   ├── ERR188245
 │   │   ├── e2t.ctab
@@ -157,14 +157,13 @@ So please download the vcf files from the FTP or use demo_vcf [here](query.outpu
 │   │   ├── i2t.ctab
 │   │   ├── i_data.ctab
 │   │   └── t_data.ctab
-│   ├── ERR188428
-│   │   ├── e2t.ctab
-│   │   ├── e_data.ctab
-│   │   ├── ERR188428_chrX.gtf
-│   │   ├── i2t.ctab
-│   │   ├── i_data.ctab
-│   │   └── t_data.ctab
-│   └── FPKM_summary_table.csv
+│   └── ERR188428
+│       ├── e2t.ctab
+│       ├── e_data.ctab
+│       ├── ERR188428_chrX.gtf
+│       ├── i2t.ctab
+│       ├── i_data.ctab
+│       └── t_data.ctab
 ├── DEanalysis.R
 ├── quan
 │   ├── ERR188245_chrX.gtf
