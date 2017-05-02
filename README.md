@@ -16,7 +16,7 @@ Taipei, Taiwan
 **Wednesday May 3th:**
 - R for statistical genomic analysis [[Script]](#r-for-statistical-genomic-analysis)
 - Metagenomics
-- anamiR [[Script]](#anamir)
+- anamiR [[Script]](#anamir) [[Slides]](https://www.dropbox.com/s/s61oytmauewesvz/anamiR_training.pptx?dl=0)
 
 > All tool links, websites, citations were list in [Resources](#resources).  
 
