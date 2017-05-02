@@ -14,7 +14,7 @@ Taipei, Taiwan
 - [CellExpress](http://cellexpress.cgm.ntu.edu.tw)
 
 **Wednesday May 3th:**
-- R for statistical genomic analysis [[Script]](#r-for-statistical-genomic-analysis) [[Slides]](https://www.space.ntu.edu.tw/navigate/s/BBE3A674EF514F98938EB21336F73435QQY)
+- R for statistical genomic analysis [[Script]](#r-for-statistical-genomic-analysis) [[Slides]](https://drive.google.com/file/d/0B0Kj9BliVAycTFEyenAyQ3Jua2s/view)
 - Metagenomics
 - anamiR [[Script]](#anamir) [[Slides]](https://www.dropbox.com/s/s61oytmauewesvz/anamiR_training.pptx?dl=0)
 
